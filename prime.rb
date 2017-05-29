@@ -4,6 +4,9 @@ def prime?(integer)
   while (i <= integer/2)
     if (integer % i == 0)
       return false
+      break
+    end
+    i += 1
   end
   return true
 end
