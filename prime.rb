@@ -1,7 +1,7 @@
 # Trying out a few different implementations
 
 #Trial division
-def naive_prime_test(number)
+def trial_division(number)
   i = 2
   while i <= Math.sqrt(number)
     return false if number % i == 0
@@ -12,7 +12,7 @@ end
 
 # Sieve of Erastosthenes
 # Generates all primes up to number
-def number_sieve_test(number)
+def number_sieve(number)
   primes = (0..number).to_a
 
   primes[0] = nil
@@ -41,7 +41,6 @@ end
 def prime?(number)
   # 1, 0, and negatives are not prime!
   return false if number <= 1
-  #naive_prime_test(number)
-  number_sieve_test(number)
+  trial_division(number)
+  #number_sieve(number)
 end
-
