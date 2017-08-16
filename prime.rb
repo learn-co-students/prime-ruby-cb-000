@@ -1,4 +1,5 @@
 # Add  code here!
+require "benchmark"
 def  prime?(value)
   if value <= 1
     return false
@@ -15,4 +16,5 @@ def  prime?(value)
     i = i + 6
   end
   return true
+  puts Benchmark.measure
 end
