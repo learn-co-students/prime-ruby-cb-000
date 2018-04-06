@@ -1,6 +1,6 @@
 require 'pry'
 
-def prime?(n)
+def prime?(n) # From: https://www.quora.com/What-is-the-formula-of-prime-numbers
   return false if n < 2
   primes = []
   sum = 0
