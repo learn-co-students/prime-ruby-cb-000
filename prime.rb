@@ -1,6 +1,6 @@
 # Add  code here!
 def prime?(num)
-  numbers = (1..1000000).to_a
+  numbers = (1..num).to_a
   factors = []
   return false if num < 0
   numbers.select do |number|
